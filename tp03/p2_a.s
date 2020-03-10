@@ -17,7 +17,7 @@ main:   addi $sp,$sp,-4
         sw $t2,TRISE($t1)              # WRITE REGISTER TRISE
         li $t3,1
 
-while:  li $a0,500
+while:  li $a0,1000 #->1HZ  #250-> 4HZ
         jal delay                       #delay(500)
 
         lw $t2,LATE($t1)                

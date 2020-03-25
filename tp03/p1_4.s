@@ -10,7 +10,7 @@
         .globl main
 main:   addiu $sp,$sp,-4
         sw $ra,0($sp)
-        li $t3,0        # v = $t0 = 0;
+        li $t3,0                # v = $t0 = 0;
         
         lui $t1,SFR_BASE_HI
         lw $t2,TRISE($t1)       # Read TRISE
